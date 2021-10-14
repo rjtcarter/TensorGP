@@ -11,7 +11,7 @@ class SBBEngine:
     possibleActions = []
     
     # actionTensor is a tensor describing the chosen action of each learner.
-    actionTensor
+    actionTensor = tf.zeros(1)
     
     # True class labels.
     labels = []
@@ -19,16 +19,43 @@ class SBBEngine:
     # Attributes
     features = []
 
+
     # Needs initalization logic.
-    def __init__(self, popSize, actions, labels, features):
+    def __init__(self, popSize, actions, labels, features, gap, maxInitTeamSize
+                minInitTeamsSize):
+        
+        
+        
+        # Decide how large each team will be initially.
+        teamSizes = np.random.randint(minInitTeamsSize, maxInitTeamSize, popSize)
+        totalInitPrograms = teamSizes.sum()
+        
+        offset = 0
+           
+        # Create initial teams and assign learners.
         for i in range(popSize):
-            self.teams.append(Team())
+            self.teams.append(Team(totalInitPrograms()))
+            self.teams[-1].learners = np.zeros(popSize)
+            self.teams[-1].learners[offset:offset + teamSizes[i] + 1] = 1
+            offset += teamSizes[i]
+           
+        # Call to initialize the TensorGP engine. 
+        self.engine = Engine()
+        
+        self.gap = gap
+        
         
         for i in range(len(actions))
             self.actions.append(actions[i])
             
         self.features = tf.tensor(features)
         self.labels = tf.tensor(labels)
+       
+    # Rankings determined by fitness, sort from least fit to most.
+    def rank(self):
+        self.teams.sort(key=lambda team: team.fitness, reverse=True)
+
+    
        
     # Takes in the tensor and goes through the pop, determines classification accuracy
     # and applies as fitness.
@@ -46,6 +73,25 @@ class SBBEngine:
             
             # Fitness assigned as total number of correct answers.
             teams[i].fitness = correctness.sum()
+
+    def runGeneration(self):
+        
+        # Measure fitness and rank
+        self.teamFitness(self.engine.calculate_tensors(engine.population))
+        self.rank()
+        
+        # Replace the gap% individuals
+        for i in range(int(gap * popSize)):
+            # TODO: create actual logic for replacing with a meaningful team.
+            # Basically, need to handle variation operations for this to be meaningful
+            self.teams[i] = 0
+        
+        
+        
+        
+        
+        
+        
 
 # Object representing a team.
 class Team:

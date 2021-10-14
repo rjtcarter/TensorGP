@@ -11,8 +11,7 @@ def calc_fit(**kwargs):
     target = kwargs.get('target')
     
     print(np.array(tensors).shape)
-    raise Exception("lol")
-
+    
     fn = f_path + "gen_" + str(generation).zfill(5)
     fitness = []
     times = []
