@@ -1,0 +1,289 @@
+Engine state information:
+Population Size: 50
+Tournament Size: 3
+Mutation Rate: 0.1
+Crossover Rate: 0.9
+Minimun Tree Depth: 10
+Maximun Tree Depth: -1
+Initial Tree Depth: 10
+Population method: ramped half-and-half
+Terminal Probability: 0.2
+Scalar Probability (from terminals): 0.55
+Uniform Scalar (scalarT) Probability (from terminals): 0.7
+Stop Criteria: generation
+Stop Value: 49
+Objective: minimizing
+Generations per immigration: inf
+Dimensions: [64, 64]
+Max nodes: -1
+Debug Level: 0
+Device: /gpu:0
+Save to file: 10
+Generation: 49
+Engine Seed : 39485793530
+Engine ID : 107282309446959104
+Elapse Engine Time: 20.718939304351807
+Elapse Initiation Time: 0.01735997200012207
+Elapse Tensor Time: 17.21717405319214
+Elapse Fitness Time: 2.9437689781188965
+
+
+Population: 
+
+Best individual:
+Expression: add(abs(scalar(0.3677328642838056)), pow(abs(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), scalar(2.6346572012863456)))
+Fitness: 0.0
+Depth: 5
+
+Current Population:
+
+
+Individual 0:
+Expression: add(abs(scalar(0.3677328642838056)), pow(abs(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), scalar(2.6346572012863456)))
+Fitness: 0.0
+Depth: 5
+
+Individual 1:
+Expression: add(mult(scalar(3.0620193149494384), scalar(4.409186337486821)), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 2
+
+Individual 2:
+Expression: add(scalar(2.6346572012863456), add(pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)), pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)))))
+Fitness: 0.0
+Depth: 5
+
+Individual 3:
+Expression: add(scalar(4.797215469693704), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 2
+
+Individual 4:
+Expression: add(mult(tan(scalar(2.3344492204676026)), scalar(4.380943485951416)), abs(scalar(0.3677328642838056)))
+Fitness: 0.0
+Depth: 3
+
+Individual 5:
+Expression: add(pow(pow(scalar(-2.1340374579982244), x), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 3
+
+Individual 6:
+Expression: add(scalar(2.6346572012863456), abs(scalar(0.3677328642838056)))
+Fitness: 0.39952198
+Depth: 2
+
+Individual 7:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), mult(scalar(2.3344492204676026), cos(scalar(4.380943485951416))))
+Fitness: 0.0
+Depth: 3
+
+Individual 8:
+Expression: add(pow(sub(scalar(-3.0773578631087286), add(scalar(2.3344492204676026), scalar(4.380943485951416))), abs(pow(scalar(2.6346572012863456), scalar(4.797215469693704)))), mult(scalar(2.3344492204676026), mult(scalar(2.3344492204676026), pow(scalar(-2.1340374579982244), x))))
+Fitness: 0.0
+Depth: 4
+
+Individual 9:
+Expression: add(pow(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746))), sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), scalar(4.380943485951416))
+Fitness: 0.0
+Depth: 4
+
+Individual 10:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(scalar(-2.1340374579982244), x))
+Fitness: 0.0
+Depth: 2
+
+Individual 11:
+Expression: add(cos(pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)))), pow(abs(scalar(0.3677328642838056)), sub(scalar(4.67980978318846), x)))
+Fitness: 1.1543635
+Depth: 5
+
+Individual 12:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), sub(pow(scalar(2.6346572012863456), scalar(4.797215469693704)), pow(y, scalar(-1.0510511839043746))))
+Fitness: 0.0
+Depth: 3
+
+Individual 13:
+Expression: add(abs(scalar(0.3677328642838056)), pow(pow(scalar(-2.1340374579982244), x), mult(scalar(2.3344492204676026), scalar(4.380943485951416))))
+Fitness: 0.72645324
+Depth: 3
+
+Individual 14:
+Expression: add(cos(pow(scalar(-3.0773578631087286), scalar(2.6346572012863456))), pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456))))
+Fitness: 0.0
+Depth: 4
+
+Individual 15:
+Expression: add(pow(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), abs(sub(scalar(4.67980978318846), x))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 4
+
+Individual 16:
+Expression: add(abs(pow(scalar(2.6346572012863456), scalar(4.797215469693704))), abs(scalar(0.3677328642838056)))
+Fitness: 0.0
+Depth: 3
+
+Individual 17:
+Expression: add(pow(scalar(2.6346572012863456), scalar(4.797215469693704)), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 2
+
+Individual 18:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(abs(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), cos(mult(scalar(2.3344492204676026), scalar(4.380943485951416)))))
+Fitness: 0.0
+Depth: 5
+
+Individual 19:
+Expression: add(pow(sub(scalar(-3.0773578631087286), add(cos(scalar(-0.08281426123627966)), div(scalar(-3.5634025007233694), scalar(-4.378514220173383)))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456))), pow(sub(scalar(-3.0773578631087286), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 5
+
+Individual 20:
+Expression: add(sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286)), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 2
+
+Individual 21:
+Expression: add(scalar(4.797215469693704), pow(pow(scalar(-2.1340374579982244), x), div(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 3
+
+Individual 22:
+Expression: add(sub(scalar(4.67980978318846), x), abs(scalar(0.3677328642838056)))
+Fitness: 0.0
+Depth: 2
+
+Individual 23:
+Expression: add(pow(pow(pow(scalar(2.6346572012863456), y), scalar(4.797215469693704)), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 4
+
+Individual 24:
+Expression: add(add(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 2
+
+Individual 25:
+Expression: add(pow(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746))), abs(add(scalar(4.67980978318846), scalar(4.380943485951416)))), scalar(4.380943485951416))
+Fitness: 0.0
+Depth: 4
+
+Individual 26:
+Expression: add(pow(sub(scalar(-3.0773578631087286), add(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(2.6346572012863456), scalar(4.797215469693704))), mult(scalar(2.3344492204676026), cos(scalar(4.380943485951416))))
+Fitness: 0.0
+Depth: 4
+
+Individual 27:
+Expression: add(div(x, pow(abs(scalar(0.3677328642838056)), sub(scalar(4.67980978318846), x))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 4
+
+Individual 28:
+Expression: add(abs(scalar(0.3677328642838056)), pow(scalar(2.6346572012863456), scalar(-3.0773578631087286)))
+Fitness: 0.0
+Depth: 2
+
+Individual 29:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(y, scalar(-1.0510511839043746)))
+Fitness: 0.0
+Depth: 2
+
+Individual 30:
+Expression: add(pow(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), pow(sub(scalar(-3.0773578631087286), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 4
+
+Individual 31:
+Expression: add(add(pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 3
+
+Individual 32:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286)))
+Fitness: 0.0
+Depth: 2
+
+Individual 33:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(sub(scalar(-3.0773578631087286), pow(scalar(-2.1340374579982244), x)), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456))))
+Fitness: 0.0
+Depth: 4
+
+Individual 34:
+Expression: add(pow(mult(scalar(3.0620193149494384), scalar(4.409186337486821)), pow(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), pow(scalar(-2.1340374579982244), x))), mult(sin(scalar(2.3344492204676026)), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 4
+
+Individual 35:
+Expression: add(mult(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), abs(scalar(0.3677328642838056))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 4
+
+Individual 36:
+Expression: add(pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), pow(sub(scalar(-3.0773578631087286), mult(scalar(2.3344492204676026), scalar(4.380943485951416))), pow(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 4
+
+Individual 37:
+Expression: add(div(tan(scalar(3.9433027129312705)), sub(y, scalar(3.0543936332783))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)))
+Fitness: 0.0
+Depth: 3
+
+Individual 38:
+Expression: add(scalar(4.380943485951416), pow(scalar(-3.0773578631087286), pow(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 3
+
+Individual 39:
+Expression: add(mult(x, pow(abs(scalar(0.3677328642838056)), pow(sub(pow(scalar(2.6346572012863456), scalar(4.797215469693704)), pow(y, scalar(-1.0510511839043746))), abs(mult(scalar(2.3344492204676026), scalar(4.380943485951416)))))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 6
+
+Individual 40:
+Expression: add(mult(x, pow(abs(scalar(0.3677328642838056)), pow(sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286)), abs(mult(scalar(2.3344492204676026), scalar(4.380943485951416)))))), pow(scalar(2.6346572012863456), scalar(4.797215469693704)))
+Fitness: 0.0
+Depth: 6
+
+Individual 41:
+Expression: add(abs(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746)))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)))
+Fitness: 0.0
+Depth: 4
+
+Individual 42:
+Expression: add(pow(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), scalar(2.3344492204676026)), sub(mult(scalar(1.0089801124361308), abs(scalar(0.12951048733244708))), tan(scalar(4.100073721757255))))
+Fitness: 0.0
+Depth: 4
+
+Individual 43:
+Expression: add(cos(pow(mult(scalar(2.3344492204676026), cos(scalar(4.380943485951416))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456)))), pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), pow(scalar(-3.0773578631087286), scalar(2.6346572012863456))))
+Fitness: 0.0
+Depth: 5
+
+Individual 44:
+Expression: add(pow(sub(scalar(-3.0773578631087286), abs(pow(scalar(2.6346572012863456), scalar(4.797215469693704)))), abs(pow(scalar(2.6346572012863456), scalar(4.797215469693704)))), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 5
+
+Individual 45:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), scalar(4.380943485951416))
+Fitness: 0.0
+Depth: 2
+
+Individual 46:
+Expression: add(scalar(4.380943485951416), pow(sub(scalar(-3.0773578631087286), pow(y, scalar(-1.0510511839043746))), pow(scalar(-2.1340374579982244), x)))
+Fitness: 0.0
+Depth: 4
+
+Individual 47:
+Expression: add(pow(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 3
+
+Individual 48:
+Expression: add(mult(scalar(2.3344492204676026), scalar(4.380943485951416)), mult(scalar(2.3344492204676026), scalar(4.380943485951416)))
+Fitness: 0.0
+Depth: 2
+
+Individual 49:
+Expression: add(pow(sub(scalar(-3.0773578631087286), sub(scalar(-1.0510511839043746), scalar(-3.0773578631087286))), abs(pow(scalar(2.6346572012863456), scalar(4.797215469693704)))), scalar(4.380943485951416))
+Fitness: 0.0
+Depth: 4

@@ -1,0 +1,289 @@
+Engine state information:
+Population Size: 50
+Tournament Size: 3
+Mutation Rate: 0.1
+Crossover Rate: 0.9
+Minimun Tree Depth: 10
+Maximun Tree Depth: -1
+Initial Tree Depth: 10
+Population method: ramped half-and-half
+Terminal Probability: 0.2
+Scalar Probability (from terminals): 0.55
+Uniform Scalar (scalarT) Probability (from terminals): 0.7
+Stop Criteria: generation
+Stop Value: 49
+Objective: minimizing
+Generations per immigration: inf
+Dimensions: [64, 64]
+Max nodes: -1
+Debug Level: 0
+Device: /gpu:0
+Save to file: 10
+Generation: 49
+Engine Seed : 39485793530
+Engine ID : 107279254454861824
+Elapse Engine Time: 28.104389190673828
+Elapse Initiation Time: 11.389663457870483
+Elapse Tensor Time: 9.790060997009277
+Elapse Fitness Time: 6.2530834674835205
+
+
+Population: 
+
+Best individual:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 7
+
+Current Population:
+
+
+Individual 0:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 7
+
+Individual 1:
+Expression: pow(mult(abs(x), pow(y, x)), sign(mult(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), sin(scalar(-1.2153552214217278))), abs(x))))
+Fitness: 0.20973672
+Depth: 7
+
+Individual 2:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(abs(abs(scalar(3.815805517291839))), sign(mult(mult(mult(scalar(-1.2153552214217278), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), abs(x)))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 10
+
+Individual 3:
+Expression: pow(mult(mult(abs(x), pow(y, x)), pow(y, x)), sign(mult(mult(scalar(-1.2153552214217278), pow(y, x)), mult(mult(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), pow(y, x)), scalar(0.6253697078329887)), pow(scalar(1.436406614583471), x)))))
+Fitness: 0.25715798
+Depth: 8
+
+Individual 4:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(tan(mult(mult(scalar(-1.2153552214217278), pow(scalar(0.6253697078329887), sign(x))), pow(y, x))), abs(x))))
+Fitness: 0.1933766
+Depth: 8
+
+Individual 5:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(mult(cos(sub(scalar(4.898466240283865), scalar(0.6528942015522343))), sin(scalar(-1.2153552214217278))), x), pow(y, x)), mult(abs(x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 8
+
+Individual 6:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(x, sin(scalar(-1.2153552214217278))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 5
+
+Individual 7:
+Expression: pow(mult(mult(abs(x), pow(y, x)), scalar(0.6253697078329887)), sign(tan(mult(scalar(-1.7240235144642755), mult(cos(pow(y, x)), pow(y, x))))))
+Fitness: 0.19338222
+Depth: 7
+
+Individual 8:
+Expression: pow(mult(abs(x), pow(y, x)), sign(tan(y)))
+Fitness: 0.20973672
+Depth: 3
+
+Individual 9:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(scalar(-1.2153552214217278), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), abs(x))))
+Fitness: 0.1933766
+Depth: 7
+
+Individual 10:
+Expression: pow(mult(mult(abs(x), pow(y, x)), mult(abs(x), pow(y, x))), sign(mult(sign(div(y, abs(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278)))))), mult(sin(scalar(-1.2153552214217278)), pow(x, x)))))
+Fitness: 0.25640738
+Depth: 9
+
+Individual 11:
+Expression: pow(mult(mult(pow(scalar(-1.384339612491404), abs(x)), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(tan(y)))
+Fitness: 0.21847384
+Depth: 5
+
+Individual 12:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(scalar(-1.2153552214217278), pow(y, x)), mult(mult(mult(pow(scalar(0.6253697078329887), sin(mult(scalar(-1.2153552214217278), scalar(2.9470468849486133)))), pow(y, x)), scalar(0.6253697078329887)), pow(scalar(1.436406614583471), x)))))
+Fitness: 0.1933766
+Depth: 9
+
+Individual 13:
+Expression: pow(mult(sin(scalar(-1.2153552214217278)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), sin(scalar(-1.2153552214217278))), abs(x))))
+Fitness: 0.68430865
+Depth: 7
+
+Individual 14:
+Expression: pow(mult(mult(abs(x), mult(sign(div(y, abs(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278)))))), mult(sin(scalar(-1.2153552214217278)), pow(x, x)))), sin(scalar(-1.2153552214217278))), sign(mult(add(tan(cos(scalar(-1.8653166361843985))), scalar(-3.3480932259673413)), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.41665685
+Depth: 10
+
+Individual 15:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(mult(mult(sin(scalar(-1.2153552214217278)), pow(y, x)), sin(scalar(-1.2153552214217278))), x), pow(scalar(0.6253697078329887), sign(x))), mult(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 8
+
+Individual 16:
+Expression: pow(mult(mult(abs(x), pow(y, x)), scalar(0.6253697078329887)), sign(mult(mult(scalar(-1.2153552214217278), pow(y, x)), cos(scalar(-1.2792922983145418)))))
+Fitness: 0.19338222
+Depth: 5
+
+Individual 17:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(abs(x), cos(sub(scalar(4.898466240283865), scalar(0.6528942015522343)))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 6
+
+Individual 18:
+Expression: pow(mult(mult(abs(x), pow(y, x)), cos(mult(abs(x), pow(y, x)))), sign(mult(mult(pow(scalar(0.6253697078329887), sign(x)), pow(y, x)), mult(sin(scalar(-1.2153552214217278)), pow(x, x)))))
+Fitness: 0.23226833
+Depth: 6
+
+Individual 19:
+Expression: pow(mult(mult(mult(sign(div(y, abs(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278)))))), mult(sin(scalar(-1.2153552214217278)), pow(x, x))), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.27303118
+Depth: 10
+
+Individual 20:
+Expression: pow(mult(mult(x, pow(y, x)), sin(scalar(-1.2153552214217278))), sign(cos(scalar(-1.2792922983145418))))
+Fitness: 0.1933766
+Depth: 4
+
+Individual 21:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), mult(abs(x), pow(y, x)))
+Fitness: 0.24980778
+Depth: 4
+
+Individual 22:
+Expression: pow(mult(mult(mult(sin(scalar(-1.2153552214217278)), pow(y, x)), sin(scalar(-1.2153552214217278))), x), sign(mult(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), sin(scalar(-1.2153552214217278))), abs(x))))
+Fitness: 0.2118108
+Depth: 7
+
+Individual 23:
+Expression: pow(mult(mult(abs(x), tan(add(scalar(0.5885477263717753), scalar(-4.312831962317385)))), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(scalar(-1.2153552214217278), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), abs(x))))
+Fitness: 0.44341543
+Depth: 7
+
+Individual 24:
+Expression: pow(mult(mult(y, pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(mult(abs(x), cos(mult(sin(scalar(-1.2153552214217278)), y))), x), pow(y, x)), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.31810045
+Depth: 9
+
+Individual 25:
+Expression: pow(mult(mult(abs(x), pow(y, x)), x), sign(mult(mult(scalar(-1.2153552214217278), pow(y, x)), mult(mult(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), pow(y, x)), scalar(0.6253697078329887)), pow(scalar(1.436406614583471), x)))))
+Fitness: 0.24431638
+Depth: 8
+
+Individual 26:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(scalar(-1.2153552214217278), pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), abs(x))))
+Fitness: 0.1933766
+Depth: 7
+
+Individual 27:
+Expression: pow(mult(mult(sin(scalar(-1.2153552214217278)), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(tan(y)))
+Fitness: 0.28540865
+Depth: 4
+
+Individual 28:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(sign(div(y, abs(mult(mult(abs(x), pow(y, x)), abs(x))))), mult(sin(scalar(-1.2153552214217278)), pow(x, x)))))
+Fitness: 0.1933766
+Depth: 9
+
+Individual 29:
+Expression: pow(mult(mult(abs(x), pow(y, x)), x), sign(pow(y, x)))
+Fitness: 0.24431638
+Depth: 4
+
+Individual 30:
+Expression: pow(mult(pow(y, x), scalar(0.6253697078329887)), sign(mult(cos(sin(scalar(-1.2153552214217278))), pow(y, x))))
+Fitness: 0.24691142
+Depth: 5
+
+Individual 31:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(abs(x), pow(y, x)), pow(y, x)), mult(pow(y, x), mult(sin(scalar(-1.2153552214217278)), mult(sin(scalar(-1.2153552214217278)), y))))))
+Fitness: 0.1933766
+Depth: 7
+
+Individual 32:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(pow(y, x), sin(scalar(-1.2153552214217278))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 5
+
+Individual 33:
+Expression: pow(mult(mult(sign(x), pow(y, x)), scalar(0.6253697078329887)), sign(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), mult(abs(x), pow(y, x)))))
+Fitness: 0.24691142
+Depth: 5
+
+Individual 34:
+Expression: pow(mult(mult(abs(x), sin(scalar(-1.2153552214217278))), sin(scalar(-1.2153552214217278))), sign(tan(y)))
+Fitness: 0.56186676
+Depth: 4
+
+Individual 35:
+Expression: pow(mult(mult(abs(x), pow(y, pow(x, x))), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(abs(x), pow(y, x)), pow(y, x)), mult(pow(y, x), mult(sin(scalar(-1.2153552214217278)), mult(sin(scalar(-1.2153552214217278)), y))))))
+Fitness: 0.20902567
+Depth: 7
+
+Individual 36:
+Expression: pow(mult(mult(sin(scalar(-3.8243312239027416)), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), pow(y, x))))
+Fitness: 0.30510196
+Depth: 5
+
+Individual 37:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(abs(x), sin(scalar(-1.2153552214217278))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.1933766
+Depth: 5
+
+Individual 38:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sign(pow(y, x))), sign(mult(mult(abs(abs(scalar(3.815805517291839))), sin(scalar(-1.2153552214217278))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.20973672
+Depth: 6
+
+Individual 39:
+Expression: pow(mult(mult(abs(x), mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), sign(x))), mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278)))), sign(abs(x)))
+Fitness: 0.20800821
+Depth: 6
+
+Individual 40:
+Expression: pow(mult(mult(abs(x), abs(x)), scalar(0.6253697078329887)), sign(mult(pow(sin(scalar(-1.2153552214217278)), sin(scalar(-1.2153552214217278))), sign(mult(pow(mult(abs(x), pow(scalar(0.6253697078329887), scalar(-1.2153552214217278))), sin(scalar(-1.2153552214217278))), mult(sin(scalar(-1.2153552214217278)), y))))))
+Fitness: 0.40482208
+Depth: 8
+
+Individual 41:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(mult(y, pow(scalar(0.6253697078329887), sign(x))), pow(y, x)), x)))
+Fitness: 0.1933766
+Depth: 7
+
+Individual 42:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), mult(mult(scalar(-1.2153552214217278), pow(y, x)), mult(mult(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), pow(y, x)), scalar(0.6253697078329887)), pow(scalar(1.436406614583471), x))))
+Fitness: 0.2569862
+Depth: 7
+
+Individual 43:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(abs(abs(scalar(3.815805517291839))), sin(scalar(-1.2153552214217278))), abs(x))))
+Fitness: 0.1933766
+Depth: 6
+
+Individual 44:
+Expression: pow(mult(mult(abs(x), pow(y, x)), abs(x)), sign(mult(mult(abs(x), pow(scalar(0.6253697078329887), sign(x))), mult(pow(y, x), pow(y, x)))))
+Fitness: 0.24431638
+Depth: 6
+
+Individual 45:
+Expression: pow(pow(y, x), sign(cos(scalar(-1.2792922983145418))))
+Fitness: 0.24760957
+Depth: 3
+
+Individual 46:
+Expression: pow(mult(mult(abs(x), sign(pow(y, x))), scalar(0.6253697078329887)), sign(mult(cos(sin(scalar(-1.2153552214217278))), pow(y, x))))
+Fitness: 0.4755024
+Depth: 5
+
+Individual 47:
+Expression: pow(mult(mult(pow(y, x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(cos(scalar(-1.2792922983145418))))
+Fitness: 0.26330197
+Depth: 4
+
+Individual 48:
+Expression: pow(mult(mult(abs(x), pow(y, x)), sin(scalar(-1.2153552214217278))), sign(mult(mult(sin(scalar(-1.2153552214217278)), pow(y, x)), mult(mult(mult(pow(scalar(0.6253697078329887), sin(scalar(-1.2153552214217278))), pow(y, x)), scalar(0.6253697078329887)), pow(scalar(1.436406614583471), x)))))
+Fitness: 0.1933766
+Depth: 8
+
+Individual 49:
+Expression: pow(scalar(-1.2153552214217278), sign(cos(scalar(-1.2792922983145418))))
+Fitness: 0.5792959
+Depth: 3

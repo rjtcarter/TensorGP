@@ -289,6 +289,8 @@ class Node:
 
 
             else:
+                #print("DERP")
+                #print(engref.terminal.set[self.value])
                 return engref.terminal.set[self.value]
         else:
             tens_list = []

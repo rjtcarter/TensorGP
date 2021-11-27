@@ -10,6 +10,7 @@ def calc_fit(**kwargs):
     _stf = kwargs.get('stf')
     target = kwargs.get('target')
     
+    print("HELLO")
     print(np.array(tensors).shape)
     
     fn = f_path + "gen_" + str(generation).zfill(5)
@@ -69,7 +70,7 @@ if __name__ == "__main__":
     problems = [pagie]  # Add to run more problems
 
     # Domains dimensions
-    test_cases = [[64, 64]]
+    test_cases = [[64, 1]]
 
     for p in problems:
 
@@ -79,6 +80,10 @@ if __name__ == "__main__":
 
                 #seeds = random.randint(0, 0x7fffffff)
                 seeds = 39485793482 # reproducibility
+
+                termSet = Terminal_Set(1, res)
+                termSet.add_to_set('x', tf.zeros(res))
+                termSet.add_to_set('y', tf.zeros(res))
 
                 # create engine
                 engine = Engine(fitness_func=calc_fit,
@@ -96,7 +101,7 @@ if __name__ == "__main__":
                                 device=dev,
                                 stop_criteria='generation',
                                 stop_value=gens,
-                                effective_dims=2,
+                                effective_dims=1,
                                 min_domain=-5,
                                 max_domain=5,
                                 operators=normal_set,
@@ -106,7 +111,10 @@ if __name__ == "__main__":
                                 show_graphics=False,
                                 write_log=False,
                                 write_gen_stats=False,
-                                read_init_pop_from_file=None)
+                                read_init_pop_from_file=None,
+                                terminal_set = termSet)
 
                 # run evolutionary process
+                print(engine.terminal.set)
+                #print(type(engine.terminal.set))
                 engine.run()
