@@ -2,9 +2,16 @@ import numpy as np
 import tensorflow as tf
 from SBBGP import SBBEngine as sbb
 
+trainX = np.loadtxt('data/gisette_train.data')
+trainY = np.loadtxt('data/gisette_train.labels')
+testX = np.loadtxt('data/gisette_valid.data')
+testY = np.loadtxt('data/gisette_valid.labels')
 
-train = np.loadtxt('data/shuttletrain.txt')
-test = np.loadtxt('data/shuttletest.txt')
+train = np.reshape(trainX, (trainX.shape[0], -1))
+train = np.hstack((train, np.expand_dims(trainY, 1)))
+
+test = np.reshape(testX, (testX.shape[0], -1))
+test = np.hstack((test, np.expand_dims(testY, 1)))
 
 train = np.expand_dims(train, 2)
 test = np.expand_dims(test, 2)
@@ -17,7 +24,7 @@ test = tf.convert_to_tensor(test, dtype=tf.float32)
 
 print("Data converted to tensor!")
 
-eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'derp',  recordPerformance = True)
+eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'gisette',  recordPerformance = True)
 
 print("Initialized SBB!")
 
