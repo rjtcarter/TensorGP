@@ -38,12 +38,12 @@ for i in range(30):
     except OSError as error:
         print(error)
 
-    eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'shuttleGPU/' + str(i),  recordPerformance = True, seed=42 + i, pRemoval=0.5, pAddition=0.95)
+    eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'shuttleGPU/' + str(i),  recordPerformance = True, seed=42 + i, pRemoval=0.5, pAddition=0.95, numElites = 20)
+    eng.initializePopulation()
 
     for j in range(500):
         
-        eng.runGeneration()
-    
+        eng.runGeneration(j)
     
     gpu_time = open('shuttleGPU/shuttle_gpu_time', 'a+')    
     gpu_time.write(str(time.time() - start_time) + "\n")
@@ -74,6 +74,8 @@ for i in range(30):
     gpu_nodes.write("\n")       
     gpu_nodes.close()
     
+derp = derp
+
  # With CPU
 for i in range(30):
 
@@ -84,11 +86,12 @@ for i in range(30):
     except OSError as error:
         print(error)
 
-    eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'shuttleCPU/' + str(i),  recordPerformance = True, device='/cpu:0', seed=42 + i, pRemoval=0.5, pAddition=0.95)
+    eng = sbb.SBBEngine(200, actions, trainX=train[:,:-1], testX=test[:,:-1], trainY=train[:,-1], testY=test[:,-1], outDirectory = 'shuttleCPU/' + str(i),  recordPerformance = True, device='/CPU:0', seed=42 + i, pRemoval=0.5, pAddition=0.95, numElites = 200)
+    eng.initializePopulation()
 
     for j in range(500):
         
-        eng.runGeneration()
+        eng.runGeneration(j)
         
     cpu_time = open('shuttleCPU/shuttle_cpu_time', 'a+')    
     cpu_time.write(str(time.time() - start_time) + "\n")

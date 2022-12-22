@@ -1,4 +1,5 @@
 from tensorgp.engine import *
+import numpy as np
 
 # Fitness function to calculate RMSE from target (Pagie Polynomial)
 def calc_fit(**kwargs):
@@ -70,7 +71,7 @@ if __name__ == "__main__":
     problems = [pagie]  # Add to run more problems
 
     # Domains dimensions
-    test_cases = [[64, 1]]
+    test_cases = [[70000, 1]]
 
     for p in problems:
 
@@ -82,8 +83,11 @@ if __name__ == "__main__":
                 seeds = 39485793482 # reproducibility
 
                 termSet = Terminal_Set(1, res)
-                termSet.add_to_set('x', tf.zeros(res))
-                termSet.add_to_set('y', tf.zeros(res))
+                
+                print(type(tf.convert_to_tensor(np.random.rand(res[0], res[1]))))
+                
+                termSet.add_to_set('x', tf.convert_to_tensor(np.random.rand(res[0], res[1]), dtype=tf.float32))
+                termSet.add_to_set('y', tf.convert_to_tensor(np.random.rand(res[0], res[1]), dtype=tf.float32))
 
                 # create engine
                 engine = Engine(fitness_func=calc_fit,
